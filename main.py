@@ -1,16 +1,42 @@
-# 这是一个示例 Python 脚本。
+import logging
 
-# 按 ⌃R 执行或将其替换为您的代码。
-# 按 双击 ⇧ 在所有地方搜索类、文件、工具窗口、操作和设置。
-
-
-def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 ⌘F8 切换断点。
+import toolbox
+from handler import Handler
 
 
-# 按装订区域中的绿色按钮以运行脚本。
+def initialize():
+    # logging.disable()
+    logging.basicConfig(filename="record.log", filemode="w", format="%(message)s", encoding="utf-8", level=logging.NOTSET)
+
+
+def create_data(name: str):
+    schema = toolbox.read_schema(name)
+    handler = Handler(schema)
+    handler.validate()
+    header = handler.create_header()
+    data = handler.create_data()
+    toolbox.write_data(name, header, data)
+    logging.info(f"属性 {name} 的数据生成完毕!")
+
+
+def create_attributes():
+    create_data("sides")
+    create_data("types")
+
+
+def run():
+    initialize()
+    create_attributes()
+    # with open('side.csv', mode='w', encoding='utf-8', newline='') as f:
+    #     writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+    #     writer.writerow(['1001', 1002, None, 'abc', '123.456', 789.012])
+    #
+    # with open('side.csv', mode='r', encoding='utf-8', newline='') as f2:
+    #     reader = csv.reader(f2)
+    #     for line in reader:
+    #         for item in line:
+    #             print(item, type(item))
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+    run()

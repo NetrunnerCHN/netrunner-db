@@ -1,0 +1,26 @@
+{
+  "name": "types",
+  "comment": "卡牌类型",
+  "en_filename": "card_types",
+  "cn_filename": "types.zh-hans",
+  "fields": [
+    {
+      "name": "en_name",
+      "comment": "英文名称",
+      "lang": 1,
+      "source": "name"
+    },
+    {
+      "name": "cn_name",
+      "comment": "中文名称",
+      "lang": 2,
+      "source": "name"
+    },
+    {
+      "name": "side_codename",
+      "comment": "所属阵营",
+      "lang": 1,
+      "source": "side_id"
+    }
+  ]
+}
