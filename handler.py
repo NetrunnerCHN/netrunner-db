@@ -61,9 +61,10 @@ class Handler:
         result = list()
         id_name = toolbox.select_identifier(langcode.LANGCODE_ENGLISH)
         for line in self.entries:
-            index = line[id_name]
+            index = str(line[id_name])
+            # 英文ID以下划线连接，中文ID以短横线连接，这里需要做兼容处理
             item1 = self.en_data.get(index)
-            item2 = self.cn_data.get(index)
+            item2 = self.cn_data.get(index.replace("_", "-"))
 
             line = dict()
             line[IDENTIFIER] = index

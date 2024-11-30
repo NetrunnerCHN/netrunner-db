@@ -22,6 +22,7 @@ def create_data(name: str):
 def create_attributes():
     create_data("sides")
     create_data("types")
+    create_data("factions")
 
 
 def run():

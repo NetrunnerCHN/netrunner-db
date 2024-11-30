@@ -1,7 +1,7 @@
 "codename","en_name","cn_name","side_codename"
 "agenda","Agenda","议案","corp"
 "asset","Asset","资产","corp"
-"corp_identity","Corp Identity","","corp"
+"corp_identity","Corp Identity","公司特性","corp"
 "event","Event","事件","runner"
 "hardware","Hardware","硬件","runner"
 "ice","Ice","防火墙","corp"

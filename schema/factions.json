@@ -1,0 +1,50 @@
+{
+  "name": "factions",
+  "comment": "派系",
+  "en_filename": "factions",
+  "cn_filename": "factions.zh-hans",
+  "fields": [
+    {
+      "name": "en_name",
+      "comment": "英文名称",
+      "lang": 1,
+      "source": "name"
+    },
+    {
+      "name": "cn_name",
+      "comment": "中文名称",
+      "lang": 2,
+      "source": "name"
+    },
+    {
+      "name": "en_description",
+      "comment": "英文简介",
+      "lang": 1,
+      "source": "description"
+    },
+    {
+      "name": "cn_description",
+      "comment": "中文简介",
+      "lang": 2,
+      "source": "description"
+    },
+    {
+      "name": "color",
+      "comment": "颜色",
+      "lang": 1,
+      "source": "color"
+    },
+    {
+      "name": "is_mini",
+      "comment": "是/否迷你派系",
+      "lang": 1,
+      "source": "is_mini"
+    },
+    {
+      "name": "side_codename",
+      "comment": "所属阵营",
+      "lang": 1,
+      "source": "side_id"
+    }
+  ]
+}
