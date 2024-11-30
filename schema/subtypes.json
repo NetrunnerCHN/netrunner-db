@@ -1,0 +1,20 @@
+{
+  "name": "subtypes",
+  "comment": "子类型",
+  "en_filename": "card_subtypes",
+  "cn_filename": "subtypes.zh-hans",
+  "fields": [
+    {
+      "name": "en_name",
+      "comment": "英文名称",
+      "lang": 1,
+      "source": "name"
+    },
+    {
+      "name": "cn_name",
+      "comment": "中文名称",
+      "lang": 2,
+      "source": "name"
+    }
+  ]
+}

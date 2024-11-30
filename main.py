@@ -23,6 +23,7 @@ def create_attributes():
     create_data("sides")
     create_data("types")
     create_data("factions")
+    create_data("subtypes")
 
 
 def run():
