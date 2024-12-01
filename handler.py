@@ -45,6 +45,9 @@ class Handler:
                 if not valid:
                     result.add(k)
 
+        for i in self.schema.ignores:
+            result.discard(i)
+
         if len(result) > 0:
             text = ", ".join(result)
             language = toolbox.select_language(lang)

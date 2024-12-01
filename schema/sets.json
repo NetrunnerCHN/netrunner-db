@@ -52,5 +52,8 @@
       "lang": 1,
       "source": "size"
     }
+  ],
+  "ignores": [
+    "legacy_code"
   ]
 }

@@ -28,5 +28,8 @@
       "lang": 1,
       "source": "released_by"
     }
+  ],
+  "ignores": [
+    "legacy_code"
   ]
 }

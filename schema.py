@@ -22,13 +22,15 @@ class Schema:
     comment: str
     en_filename: str
     cn_filename: str
+    ignores: list[str]
     fields: list[Field]
 
-    def __init__(self, name: str, comment: str, en_filename: str, cn_filename: str, fields: list):
+    def __init__(self, name: str, comment: str, en_filename: str, cn_filename: str, fields: list, ignores: list[str]):
         self.name = name
         self.comment = comment
         self.en_filename = en_filename
         self.cn_filename = cn_filename
+        self.ignores = ignores
         self.fields = []
         for f in fields:
             field = Field(**f)
