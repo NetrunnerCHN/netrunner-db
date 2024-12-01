@@ -1,0 +1,56 @@
+{
+  "name": "sets",
+  "comment": "卡包",
+  "en_filename": "card_sets",
+  "cn_filename": "packs.zh-hans",
+  "fields": [
+    {
+      "name": "en_name",
+      "comment": "英文名称",
+      "lang": 1,
+      "source": "name"
+    },
+    {
+      "name": "cn_name",
+      "comment": "中文名称",
+      "lang": 2,
+      "source": "name"
+    },
+    {
+      "name": "cycle_codename",
+      "comment": "所属循环",
+      "lang": 1,
+      "source": "card_cycle_id"
+    },
+    {
+      "name": "set_type_codename",
+      "comment": "所属卡包类型",
+      "lang": 1,
+      "source": "card_set_type_id"
+    },
+    {
+      "name": "release_date",
+      "comment": "发行日期",
+      "lang": 1,
+      "source": "date_release"
+    },
+    {
+      "name": "position",
+      "comment": "位置",
+      "lang": 1,
+      "source": "position"
+    },
+    {
+      "name": "released_by",
+      "comment": "发行商",
+      "lang": 1,
+      "source": "released_by"
+    },
+    {
+      "name": "size",
+      "comment": "卡牌数量",
+      "lang": 1,
+      "source": "size"
+    }
+  ]
+}

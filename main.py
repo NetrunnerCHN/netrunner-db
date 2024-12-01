@@ -29,6 +29,7 @@ def create_attributes():
 def create_series():
     create_data("set_types")
     create_data("cycles")
+    create_data("sets")
 
 
 def run():
