@@ -61,13 +61,36 @@ def select_language(lang: int) -> str:
 
 def read_data(filename: str, lang: int) -> list[dict]:
     folder = select_folder(lang)
-    fullname = os.path.join(folder, filename + JSON_EXT)
-    with open(fullname, mode="r", encoding="utf-8") as f:
+    fullname = os.path.join(folder, filename)
+    if os.path.isdir(fullname):
+        return read_folder_data(fullname)
+    else:
+        fullname = os.path.join(folder, filename + JSON_EXT)
+        return read_file_data(fullname)
+
+
+def read_file_data(filename: str) -> list[dict]:
+    with open(filename, mode="r", encoding="utf-8") as f:
         items = json.load(f)
         if not isinstance(items, list):
             raise RuntimeError(f"文件格式不合法: {filename}!")
 
         return items
+
+
+def read_folder_data(filename: str) -> list[dict]:
+    items = list()
+    filenames = os.listdir(filename)
+    for fn in filenames:
+        if not fn.endswith(JSON_EXT):
+            continue
+
+        fullname = os.path.join(filename, fn)
+        with open(fullname, mode="r", encoding="utf-8") as f:
+            item = json.load(f)
+            items.append(item)
+
+    return items
 
 
 def convert_data(entries: list[dict], lang: int) -> dict[str, dict]:

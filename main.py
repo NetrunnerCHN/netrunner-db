@@ -32,10 +32,15 @@ def create_series():
     create_data("sets")
 
 
+def create_formats():
+    create_data("formats")
+
+
 def run():
     initialize()
     create_attributes()
     create_series()
+    create_formats()
     # with open('side.csv', mode='w', encoding='utf-8', newline='') as f:
     #     writer = csv.writer(f, quoting=csv.QUOTE_ALL)
     #     writer.writerow(['1001', 1002, None, 'abc', '123.456', 789.012])

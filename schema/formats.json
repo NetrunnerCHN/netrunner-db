@@ -1,0 +1,23 @@
+{
+  "name": "format",
+  "comment": "赛制",
+  "en_filename": "formats",
+  "cn_filename": "formats.zh-hans",
+  "fields": [
+    {
+      "name": "en_name",
+      "comment": "英文名称",
+      "lang": 1,
+      "source": "name"
+    },
+    {
+      "name": "cn_name",
+      "comment": "中文名称",
+      "lang": 2,
+      "source": "name"
+    }
+  ],
+  "ignores": [
+    "snapshots"
+  ]
+}
