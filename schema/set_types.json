@@ -1,0 +1,32 @@
+{
+  "name": "set_types",
+  "comment": "卡包类型",
+  "en_filename": "card_set_types",
+  "cn_filename": "set_types.zh-hans",
+  "fields": [
+    {
+      "name": "en_name",
+      "comment": "英文名称",
+      "lang": 1,
+      "source": "name"
+    },
+    {
+      "name": "cn_name",
+      "comment": "中文名称",
+      "lang": 2,
+      "source": "name"
+    },
+    {
+      "name": "en_description",
+      "comment": "英文简介",
+      "lang": 1,
+      "source": "description"
+    },
+    {
+      "name": "cn_description",
+      "comment": "中文简介",
+      "lang": 2,
+      "source": "description"
+    }
+  ]
+}

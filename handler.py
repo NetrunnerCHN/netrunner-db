@@ -5,6 +5,7 @@ import toolbox
 from schema import Schema
 
 
+LEGACY_CODE = "legacy_code"
 IDENTIFIER = "codename"
 
 
@@ -61,13 +62,14 @@ class Handler:
         result = list()
         id_name = toolbox.select_identifier(langcode.LANGCODE_ENGLISH)
         for line in self.entries:
-            index = str(line[id_name])
+            index1 = str(line[id_name])
+            index2 = line[LEGACY_CODE] if LEGACY_CODE in line else index1.replace("_", "-")
             # 英文ID以下划线连接，中文ID以短横线连接，这里需要做兼容处理
-            item1 = self.en_data.get(index)
-            item2 = self.cn_data.get(index.replace("_", "-"))
+            item1 = self.en_data.get(index1)
+            item2 = self.cn_data.get(index2)
 
             line = dict()
-            line[IDENTIFIER] = index
+            line[IDENTIFIER] = index1
             for f in self.schema.fields:
                 if f.lang == langcode.LANGCODE_ENGLISH:
                     line[f.name] = (str(item1[f.source]) if (f.source in item1) else "") if item1 else ""

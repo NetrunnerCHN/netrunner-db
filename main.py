@@ -26,9 +26,15 @@ def create_attributes():
     create_data("subtypes")
 
 
+def create_series():
+    create_data("set_types")
+    create_data("cycles")
+
+
 def run():
     initialize()
     create_attributes()
+    create_series()
     # with open('side.csv', mode='w', encoding='utf-8', newline='') as f:
     #     writer = csv.writer(f, quoting=csv.QUOTE_ALL)
     #     writer.writerow(['1001', 1002, None, 'abc', '123.456', 789.012])
