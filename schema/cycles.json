@@ -1,0 +1,32 @@
+{
+  "name": "cycles",
+  "comment": "循环",
+  "en_filename": "card_cycles",
+  "cn_filename": "cycles.zh-hans",
+  "fields": [
+    {
+      "name": "en_name",
+      "comment": "英文名称",
+      "lang": 1,
+      "source": "name"
+    },
+    {
+      "name": "cn_name",
+      "comment": "中文名称",
+      "lang": 2,
+      "source": "name"
+    },
+    {
+      "name": "position",
+      "comment": "位置",
+      "lang": 1,
+      "source": "position"
+    },
+    {
+      "name": "released_by",
+      "comment": "发行商",
+      "lang": 1,
+      "source": "released_by"
+    }
+  ]
+}
