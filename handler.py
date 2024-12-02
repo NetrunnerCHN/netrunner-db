@@ -11,27 +11,25 @@ IDENTIFIER = "codename"
 
 class Handler:
     schema: Schema
-    entries: list[dict]
-    en_data: dict[str, dict]
-    cn_data: dict[str, dict]
+    english_entries: list[dict]
+    chinese_entries: list[dict]
+    english_tables: dict[str, dict]
+    chinese_tables: dict[str, dict]
 
     def __init__(self, schema: Schema):
         self.schema = schema
-
-        list1 = toolbox.read_data(self.schema.en_filename, langcode.LANGCODE_ENGLISH)
-        list2 = toolbox.read_data(self.schema.cn_filename, langcode.LANGCODE_CHINESE)
-        self.entries = list1
-        self.en_data = toolbox.convert_data(list1, langcode.LANGCODE_ENGLISH)
-        self.cn_data = toolbox.convert_data(list2, langcode.LANGCODE_CHINESE)
-
+        self.english_entries = toolbox.read_data(self.schema.en_filename, langcode.LANGCODE_ENGLISH)
+        self.chinese_entries = toolbox.read_data(self.schema.cn_filename, langcode.LANGCODE_CHINESE)
+        self.english_tables = toolbox.convert_data(self.english_entries, langcode.LANGCODE_ENGLISH)
+        self.chinese_tables = toolbox.convert_data(self.chinese_entries, langcode.LANGCODE_CHINESE)
 
     def validate(self):
-        self.__validate__(self.en_data, langcode.LANGCODE_ENGLISH)
-        self.__validate__(self.cn_data, langcode.LANGCODE_CHINESE)
+        self.__validate__(self.english_entries, langcode.LANGCODE_ENGLISH)
+        self.__validate__(self.chinese_entries, langcode.LANGCODE_CHINESE)
 
-    def __validate__(self, data: dict[str, dict], lang: int):
+    def __validate__(self, entries: list[dict], lang: int):
         result = set()
-        for d in data.values():
+        for d in entries:
             for k in d:
                 if k == toolbox.select_identifier(lang):
                     continue
@@ -64,23 +62,29 @@ class Handler:
     def create_data(self) -> list[dict[str, str]]:
         result = list()
         id_name = toolbox.select_identifier(langcode.LANGCODE_ENGLISH)
-        for line in self.entries:
-            index1 = str(line[id_name])
-            index2 = line[LEGACY_CODE] if LEGACY_CODE in line else index1.replace("_", "-")
-            # 英文ID以下划线连接，中文ID以短横线连接，这里需要做兼容处理
-            item1 = self.en_data.get(index1)
-            item2 = self.cn_data.get(index2)
-
+        for e in self.english_entries:
             line = dict()
-            line[IDENTIFIER] = index1
-            for f in self.schema.fields:
-                if f.lang == langcode.LANGCODE_ENGLISH:
-                    line[f.name] = (str(item1[f.source]) if (f.source in item1) else "") if item1 else ""
-                elif f.lang == langcode.LANGCODE_CHINESE:
-                    line[f.name] = (str(item2[f.source]) if (f.source in item2) else "") if item2 else ""
-                else:
-                    raise RuntimeError(f"属性 {self.schema.name} 的字段 {f.name} 使用了不合法的语言: {f.lang}!")
+            if len(self.english_tables) > 0 and len(self.chinese_tables) > 0:
+                index1 = str(e[id_name])
+                index2 = e[LEGACY_CODE] if LEGACY_CODE in e else index1.replace("_", "-")
+                # 英文ID以下划线连接，中文ID以短横线连接，这里需要做兼容处理
+                item1 = self.english_tables.get(index1)
+                item2 = self.chinese_tables.get(index2)
 
-            result.append(line)
+                line[IDENTIFIER] = index1
+                for f in self.schema.fields:
+                    if f.lang == langcode.LANGCODE_ENGLISH:
+                        line[f.name] = (str(item1[f.source]) if (f.source in item1) else "") if item1 else ""
+                    elif f.lang == langcode.LANGCODE_CHINESE:
+                        line[f.name] = (str(item2[f.source]) if (f.source in item2) else "") if item2 else ""
+                    else:
+                        raise RuntimeError(f"属性 {self.schema.name} 的字段 {f.name} 使用了不合法的语言: {f.lang}!")
+
+                result.append(line)
+            else:
+                for f in self.schema.fields:
+                    line[f.name] = str(e[f.source]) if (f.source in e) else ""
+
+                result.append(line)
 
         return result

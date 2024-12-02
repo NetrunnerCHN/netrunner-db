@@ -80,7 +80,7 @@ def read_file_data(filename: str) -> list[dict]:
 
 def read_folder_data(filename: str) -> list[dict]:
     items = list()
-    filenames = os.listdir(filename)
+    filenames = sorted(os.listdir(filename))
     for fn in filenames:
         if not fn.endswith(JSON_EXT):
             continue
@@ -88,7 +88,12 @@ def read_folder_data(filename: str) -> list[dict]:
         fullname = os.path.join(filename, fn)
         with open(fullname, mode="r", encoding="utf-8") as f:
             item = json.load(f)
-            items.append(item)
+            if isinstance(item, list):
+                items.extend(item)
+            elif isinstance(item, dict):
+                items.append(item)
+            else:
+                raise RuntimeError(f"文件格式不合法: {filename}!")
 
     return items
 
@@ -97,8 +102,9 @@ def convert_data(entries: list[dict], lang: int) -> dict[str, dict]:
     identifier = select_identifier(lang)
     result = dict()
     for v in entries:
-        k = v[identifier]
-        result[k] = v
+        if identifier in v:
+            k = v[identifier]
+            result[k] = v
 
     return result
 
