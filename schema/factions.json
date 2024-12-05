@@ -1,51 +1,56 @@
 {
   "name": "factions",
-  "comment": "派系",
-  "en_filename": "factions",
-  "cn_filename": "factions.zh-hans",
+  "source_data": "data/EN/v2/factions.json",
+  "translation_data": "data/CN/json/translations/zh-hans/factions.zh-hans.json",
+  "source_id": "id",
+  "translation_id": "code",
+  "connection_id": "",
   "fields": [
     {
+      "name": "codename",
+      "source": "id",
+      "is_trans": false
+    },
+    {
       "name": "en_name",
-      "comment": "英文名称",
-      "lang": 1,
-      "source": "name"
+      "source": "name",
+      "is_trans": false
     },
     {
       "name": "cn_name",
-      "comment": "中文名称",
-      "lang": 2,
-      "source": "name"
+      "source": "name",
+      "is_trans": true
     },
     {
       "name": "en_description",
-      "comment": "英文简介",
-      "lang": 1,
-      "source": "description"
+      "source": "description",
+      "is_trans": false
     },
     {
       "name": "cn_description",
-      "comment": "中文简介",
-      "lang": 2,
-      "source": "description"
+      "source": "description",
+      "is_trans": true
     },
     {
       "name": "color",
-      "comment": "颜色",
-      "lang": 1,
-      "source": "color"
+      "source": "color",
+      "is_trans": false
     },
     {
       "name": "is_mini",
-      "comment": "是/否迷你派系",
-      "lang": 1,
-      "source": "is_mini"
+      "source": "is_mini",
+      "is_trans": false
     },
     {
       "name": "side_codename",
-      "comment": "所属阵营",
-      "lang": 1,
-      "source": "side_id"
+      "source": "side_id",
+      "is_trans": false
     }
   ],
-  "ignores": []
+  "ignores": [
+    {
+      "name": "code",
+      "is_trans": true
+    }
+  ]
 }
