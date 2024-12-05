@@ -59,6 +59,10 @@ python -m unittest src/tests.py
   * `en_name`：英文名称
   * `cn_name`：中文名称
   * `side_codename`：所属阵营标识符
+* **subtypes / 子类型**
+  * `codename`：标识符
+  * `en_name`：英文名称
+  * `cn_name`：中文名称
 
 
 

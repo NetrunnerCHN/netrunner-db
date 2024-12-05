@@ -1,0 +1,527 @@
+[
+  {
+    "codename": "academic",
+    "en_name": "Academic",
+    "cn_name": "学术"
+  },
+  {
+    "codename": "ai",
+    "en_name": "AI",
+    "cn_name": "智能模块"
+  },
+  {
+    "codename": "ap",
+    "en_name": "AP",
+    "cn_name": "杀伤"
+  },
+  {
+    "codename": "advertisement",
+    "en_name": "Advertisement",
+    "cn_name": "广告"
+  },
+  {
+    "codename": "alliance",
+    "en_name": "Alliance",
+    "cn_name": "联盟"
+  },
+  {
+    "codename": "ambush",
+    "en_name": "Ambush",
+    "cn_name": "伏击"
+  },
+  {
+    "codename": "barrier",
+    "en_name": "Barrier",
+    "cn_name": "屏障"
+  },
+  {
+    "codename": "beanstalk",
+    "en_name": "Beanstalk",
+    "cn_name": "豆茎"
+  },
+  {
+    "codename": "bioroid",
+    "en_name": "Bioroid",
+    "cn_name": "生化人"
+  },
+  {
+    "codename": "black_ops",
+    "en_name": "Black Ops",
+    "cn_name": "黑色行动"
+  },
+  {
+    "codename": "bomb",
+    "en_name": "Bomb",
+    "cn_name": "炸弹"
+  },
+  {
+    "codename": "caissa",
+    "en_name": "Caïssa",
+    "cn_name": "西洋棋"
+  },
+  {
+    "codename": "cast",
+    "en_name": "Cast",
+    "cn_name": "节目"
+  },
+  {
+    "codename": "character",
+    "en_name": "Character",
+    "cn_name": "人物"
+  },
+  {
+    "codename": "chip",
+    "en_name": "Chip",
+    "cn_name": "芯片"
+  },
+  {
+    "codename": "clan",
+    "en_name": "Clan",
+    "cn_name": "部落"
+  },
+  {
+    "codename": "clone",
+    "en_name": "Clone",
+    "cn_name": "克隆体"
+  },
+  {
+    "codename": "cloud",
+    "en_name": "Cloud",
+    "cn_name": "云"
+  },
+  {
+    "codename": "code_gate",
+    "en_name": "Code Gate",
+    "cn_name": "门禁"
+  },
+  {
+    "codename": "companion",
+    "en_name": "Companion",
+    "cn_name": "同伴"
+  },
+  {
+    "codename": "condition",
+    "en_name": "Condition",
+    "cn_name": "状态"
+  },
+  {
+    "codename": "connection",
+    "en_name": "Connection",
+    "cn_name": "人脉"
+  },
+  {
+    "codename": "console",
+    "en_name": "Console",
+    "cn_name": "控制台"
+  },
+  {
+    "codename": "consumer_grade",
+    "en_name": "Consumer-grade",
+    "cn_name": "消费级"
+  },
+  {
+    "codename": "corp",
+    "en_name": "Corp",
+    "cn_name": "公司"
+  },
+  {
+    "codename": "corporation",
+    "en_name": "Corporation",
+    "cn_name": "公司"
+  },
+  {
+    "codename": "current",
+    "en_name": "Current",
+    "cn_name": "局势"
+  },
+  {
+    "codename": "cybernetic",
+    "en_name": "Cybernetic",
+    "cn_name": "义体"
+  },
+  {
+    "codename": "cyborg",
+    "en_name": "Cyborg",
+    "cn_name": "半机械人"
+  },
+  {
+    "codename": "daemon",
+    "en_name": "Daemon",
+    "cn_name": "后台"
+  },
+  {
+    "codename": "decoder",
+    "en_name": "Decoder",
+    "cn_name": "解码模块"
+  },
+  {
+    "codename": "deep_net",
+    "en_name": "Deep Net",
+    "cn_name": "深网"
+  },
+  {
+    "codename": "deflector",
+    "en_name": "Deflector",
+    "cn_name": "偏导器"
+  },
+  {
+    "codename": "department",
+    "en_name": "Department",
+    "cn_name": "子部门"
+  },
+  {
+    "codename": "destroyer",
+    "en_name": "Destroyer",
+    "cn_name": "毁灭者"
+  },
+  {
+    "codename": "deva",
+    "en_name": "Deva",
+    "cn_name": "提婆"
+  },
+  {
+    "codename": "digital",
+    "en_name": "Digital",
+    "cn_name": "数字体"
+  },
+  {
+    "codename": "directive",
+    "en_name": "Directive",
+    "cn_name": "指令"
+  },
+  {
+    "codename": "division",
+    "en_name": "Division",
+    "cn_name": "部门"
+  },
+  {
+    "codename": "double",
+    "en_name": "Double",
+    "cn_name": "双重"
+  },
+  {
+    "codename": "enforcer",
+    "en_name": "Enforcer",
+    "cn_name": "执法者"
+  },
+  {
+    "codename": "executive",
+    "en_name": "Executive",
+    "cn_name": "主管"
+  },
+  {
+    "codename": "expansion",
+    "en_name": "Expansion",
+    "cn_name": "扩张"
+  },
+  {
+    "codename": "expendable",
+    "en_name": "Expendable",
+    "cn_name": "可消耗"
+  },
+  {
+    "codename": "facility",
+    "en_name": "Facility",
+    "cn_name": "设施"
+  },
+  {
+    "codename": "fracter",
+    "en_name": "Fracter",
+    "cn_name": "分解模块"
+  },
+  {
+    "codename": "g_mod",
+    "en_name": "G-mod",
+    "cn_name": "转基因人"
+  },
+  {
+    "codename": "gear",
+    "en_name": "Gear",
+    "cn_name": "装备"
+  },
+  {
+    "codename": "genetics",
+    "en_name": "Genetics",
+    "cn_name": "基因"
+  },
+  {
+    "codename": "government",
+    "en_name": "Government",
+    "cn_name": "政府"
+  },
+  {
+    "codename": "grail",
+    "en_name": "Grail",
+    "cn_name": "圣杯"
+  },
+  {
+    "codename": "gray_ops",
+    "en_name": "Gray Ops",
+    "cn_name": "灰色行动"
+  },
+  {
+    "codename": "harmonic",
+    "en_name": "Harmonic",
+    "cn_name": "和声"
+  },
+  {
+    "codename": "hostile",
+    "en_name": "Hostile",
+    "cn_name": "敌对"
+  },
+  {
+    "codename": "icebreaker",
+    "en_name": "Icebreaker",
+    "cn_name": "破解器"
+  },
+  {
+    "codename": "illicit",
+    "en_name": "Illicit",
+    "cn_name": "非法"
+  },
+  {
+    "codename": "industrial",
+    "en_name": "Industrial",
+    "cn_name": "工业"
+  },
+  {
+    "codename": "initiative",
+    "en_name": "Initiative",
+    "cn_name": "原创"
+  },
+  {
+    "codename": "job",
+    "en_name": "Job",
+    "cn_name": "工作"
+  },
+  {
+    "codename": "killer",
+    "en_name": "Killer",
+    "cn_name": "断路模块"
+  },
+  {
+    "codename": "link",
+    "en_name": "Link",
+    "cn_name": "中转器"
+  },
+  {
+    "codename": "location",
+    "en_name": "Location",
+    "cn_name": "场所"
+  },
+  {
+    "codename": "lockdown",
+    "en_name": "Lockdown",
+    "cn_name": "封锁"
+  },
+  {
+    "codename": "mandate",
+    "en_name": "Mandate",
+    "cn_name": "命令"
+  },
+  {
+    "codename": "megacorp",
+    "en_name": "Megacorp",
+    "cn_name": "巨型公司"
+  },
+  {
+    "codename": "mod",
+    "en_name": "Mod",
+    "cn_name": "改造"
+  },
+  {
+    "codename": "morph",
+    "en_name": "Morph",
+    "cn_name": "变形"
+  },
+  {
+    "codename": "mythic",
+    "en_name": "Mythic",
+    "cn_name": "神秘"
+  },
+  {
+    "codename": "next",
+    "en_name": "NEXT",
+    "cn_name": "次级"
+  },
+  {
+    "codename": "natural",
+    "en_name": "Natural",
+    "cn_name": "原生人"
+  },
+  {
+    "codename": "observer",
+    "en_name": "Observer",
+    "cn_name": "观察者"
+  },
+  {
+    "codename": "off_site",
+    "en_name": "Off-site",
+    "cn_name": "场外"
+  },
+  {
+    "codename": "orgcrime",
+    "en_name": "Orgcrime",
+    "cn_name": "黑社会"
+  },
+  {
+    "codename": "police_department",
+    "en_name": "Police Department",
+    "cn_name": "警局"
+  },
+  {
+    "codename": "political",
+    "en_name": "Political",
+    "cn_name": "政治"
+  },
+  {
+    "codename": "priority",
+    "en_name": "Priority",
+    "cn_name": "优先"
+  },
+  {
+    "codename": "psi",
+    "en_name": "Psi",
+    "cn_name": "灵能"
+  },
+  {
+    "codename": "public",
+    "en_name": "Public",
+    "cn_name": "公开"
+  },
+  {
+    "codename": "region",
+    "en_name": "Region",
+    "cn_name": "区域"
+  },
+  {
+    "codename": "remote",
+    "en_name": "Remote",
+    "cn_name": "远程"
+  },
+  {
+    "codename": "reprisal",
+    "en_name": "Reprisal",
+    "cn_name": "报复"
+  },
+  {
+    "codename": "research",
+    "en_name": "Research",
+    "cn_name": "研究"
+  },
+  {
+    "codename": "ritzy",
+    "en_name": "Ritzy",
+    "cn_name": "豪华"
+  },
+  {
+    "codename": "run",
+    "en_name": "Run",
+    "cn_name": "潜袭"
+  },
+  {
+    "codename": "sabotage",
+    "en_name": "Sabotage",
+    "cn_name": "破坏"
+  },
+  {
+    "codename": "security",
+    "en_name": "Security",
+    "cn_name": "防卫"
+  },
+  {
+    "codename": "security_protocol",
+    "en_name": "Security Protocol",
+    "cn_name": "安全协议"
+  },
+  {
+    "codename": "seedy",
+    "en_name": "Seedy",
+    "cn_name": "低劣"
+  },
+  {
+    "codename": "sensie",
+    "en_name": "Sensie",
+    "cn_name": "复感电影"
+  },
+  {
+    "codename": "sentry",
+    "en_name": "Sentry",
+    "cn_name": "警报"
+  },
+  {
+    "codename": "source",
+    "en_name": "Source",
+    "cn_name": "根源"
+  },
+  {
+    "codename": "stealth",
+    "en_name": "Stealth",
+    "cn_name": "隐匿"
+  },
+  {
+    "codename": "subsidiary",
+    "en_name": "Subsidiary",
+    "cn_name": "子公司"
+  },
+  {
+    "codename": "sysop",
+    "en_name": "Sysop",
+    "cn_name": "管理员"
+  },
+  {
+    "codename": "terminal",
+    "en_name": "Terminal",
+    "cn_name": "终止"
+  },
+  {
+    "codename": "tracer",
+    "en_name": "Tracer",
+    "cn_name": "追踪者"
+  },
+  {
+    "codename": "transaction",
+    "en_name": "Transaction",
+    "cn_name": "交易"
+  },
+  {
+    "codename": "trap",
+    "en_name": "Trap",
+    "cn_name": "陷阱"
+  },
+  {
+    "codename": "triple",
+    "en_name": "Triple",
+    "cn_name": "三重"
+  },
+  {
+    "codename": "trojan",
+    "en_name": "Trojan",
+    "cn_name": "木马"
+  },
+  {
+    "codename": "unorthodox",
+    "en_name": "Unorthodox",
+    "cn_name": "异类"
+  },
+  {
+    "codename": "vehicle",
+    "en_name": "Vehicle",
+    "cn_name": "载具"
+  },
+  {
+    "codename": "virtual",
+    "en_name": "Virtual",
+    "cn_name": "虚拟"
+  },
+  {
+    "codename": "virus",
+    "en_name": "Virus",
+    "cn_name": "病毒"
+  },
+  {
+    "codename": "weapon",
+    "en_name": "Weapon",
+    "cn_name": "武器"
+  }
+]

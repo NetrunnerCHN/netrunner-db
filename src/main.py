@@ -32,8 +32,7 @@ def run():
     create_data("sides")
     create_data("factions")
     create_data("types")
-
-    # create_data("subtypes")
+    create_data("subtypes")
     #
     # # 卡包
     # create_data("set_types")
