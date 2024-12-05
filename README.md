@@ -72,7 +72,15 @@ python -m unittest src/tests.py
   * `cn_name`：中文名称
   * `en_description`：英文简介
   * `cn_description`：中文简介
-  * 
+* **publishers / 发行商**
+  * `codename`：标识符
+  * `en_name`：英文名称
+* **cycles / 循环**
+  * `codename`：标识符
+  * `en_name`：英文名称
+  * `cn_name`：中文名称
+  * `position`：位置
+  * `released_by`：发行商
 
 
 

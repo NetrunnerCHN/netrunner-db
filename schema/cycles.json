@@ -1,35 +1,45 @@
 {
   "name": "cycles",
-  "comment": "循环",
-  "en_filename": "card_cycles",
-  "cn_filename": "cycles.zh-hans",
+  "source_data": "data/EN/v2/card_cycles.json",
+  "translation_data": "data/CN/json/translations/zh-hans/cycles.zh-hans.json",
+  "source_id": "id",
+  "translation_id": "code",
+  "connection_id": "legacy_code",
   "fields": [
     {
+      "name": "codename",
+      "source": "id",
+      "is_trans": false
+    },
+    {
       "name": "en_name",
-      "comment": "英文名称",
-      "lang": 1,
-      "source": "name"
+      "source": "name",
+      "is_trans": false
     },
     {
       "name": "cn_name",
-      "comment": "中文名称",
-      "lang": 2,
-      "source": "name"
+      "source": "name",
+      "is_trans": true
     },
     {
       "name": "position",
-      "comment": "位置",
-      "lang": 1,
-      "source": "position"
+      "source": "position",
+      "is_trans": false
     },
     {
       "name": "released_by",
-      "comment": "发行商",
-      "lang": 1,
-      "source": "released_by"
+      "source": "released_by",
+      "is_trans": false
     }
   ],
   "ignores": [
-    "legacy_code"
+    {
+      "name": "legacy_code",
+      "is_trans": false
+    },
+    {
+      "name": "code",
+      "is_trans": true
+    }
   ]
 }
