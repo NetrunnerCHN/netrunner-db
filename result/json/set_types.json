@@ -1,0 +1,58 @@
+[
+  {
+    "codename": "booster_pack",
+    "en_name": "Booster Pack",
+    "cn_name": "增强包",
+    "en_description": "A booster pack released as a subset of a larger release.",
+    "cn_description": "作为大版本的子集发布的补充卡包。"
+  },
+  {
+    "codename": "campaign",
+    "en_name": "Campaign",
+    "cn_name": "战役",
+    "en_description": "A campaign set not released for legal play.",
+    "cn_description": "不可用于正式对战的战役卡包。"
+  },
+  {
+    "codename": "core",
+    "en_name": "Core",
+    "cn_name": "核心包",
+    "en_description": "A core set, or set that makes up part of the core selection of cards.",
+    "cn_description": "核心卡包，或从核心精选卡牌中挑选一部分组成的卡包。"
+  },
+  {
+    "codename": "data_pack",
+    "en_name": "Data Pack",
+    "cn_name": "数据包",
+    "en_description": "The major releases of each cycle.",
+    "cn_description": "每个循环中主要发布的卡包。"
+  },
+  {
+    "codename": "deluxe",
+    "en_name": "Deluxe",
+    "cn_name": "豪华包",
+    "en_description": "A non-core set released in a big box.",
+    "cn_description": "以大盒形式发布的非核心卡包。"
+  },
+  {
+    "codename": "draft",
+    "en_name": "Draft",
+    "cn_name": "草案",
+    "en_description": "A draft-exclusive sets.",
+    "cn_description": "草案专用卡包。"
+  },
+  {
+    "codename": "expansion",
+    "en_name": "Expansion",
+    "cn_name": "扩展",
+    "en_description": "A miscellaneous set released for legal play.",
+    "cn_description": "可用于正式对战的混合卡包。"
+  },
+  {
+    "codename": "promo",
+    "en_name": "Promo",
+    "cn_name": "宣传",
+    "en_description": "A promotional set not released for legal play.",
+    "cn_description": "不可用于正式对战的宣传卡包。"
+  }
+]

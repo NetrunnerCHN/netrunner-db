@@ -1,33 +1,41 @@
 {
   "name": "set_types",
-  "comment": "卡包类型",
-  "en_filename": "card_set_types",
-  "cn_filename": "set_types.zh-hans",
+  "source_data": "data/EN/v2/card_set_types.json",
+  "translation_data": "data/CN/json/translations/zh-hans/set_types.zh-hans.json",
+  "source_id": "id",
+  "translation_id": "code",
+  "connection_id": "",
   "fields": [
     {
+      "name": "codename",
+      "source": "id",
+      "is_trans": false
+    },
+    {
       "name": "en_name",
-      "comment": "英文名称",
-      "lang": 1,
-      "source": "name"
+      "source": "name",
+      "is_trans": false
     },
     {
       "name": "cn_name",
-      "comment": "中文名称",
-      "lang": 2,
-      "source": "name"
+      "source": "name",
+      "is_trans": true
     },
     {
       "name": "en_description",
-      "comment": "英文简介",
-      "lang": 1,
-      "source": "description"
+      "source": "description",
+      "is_trans": false
     },
     {
       "name": "cn_description",
-      "comment": "中文简介",
-      "lang": 2,
-      "source": "description"
+      "source": "description",
+      "is_trans": true
     }
   ],
-  "ignores": []
+  "ignores": [
+    {
+      "name": "code",
+      "is_trans": true
+    }
+  ]
 }

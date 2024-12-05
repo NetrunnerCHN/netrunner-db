@@ -64,6 +64,16 @@ python -m unittest src/tests.py
   * `en_name`：英文名称
   * `cn_name`：中文名称
 
+### 卡包相关
+
+* **set_types / 卡包类型**
+  * `codename`：标识符
+  * `en_name`：英文名称
+  * `cn_name`：中文名称
+  * `en_description`：英文简介
+  * `cn_description`：中文简介
+  * 
+
 
 
 ## 笔记
@@ -112,10 +122,3 @@ cards -> factions
 cards -> sides
 cards -> subtypes[]
 rulings -> cards
-
-### 属性相关
-
-- sides: 阵营
-- factions: 派系
-- types: 类型
-- subtypes: 子类型
