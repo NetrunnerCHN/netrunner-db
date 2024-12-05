@@ -31,8 +31,8 @@ def run():
     # 属性
     create_data("sides")
     create_data("factions")
-    # create_data("types")
-    #
+    create_data("types")
+
     # create_data("subtypes")
     #
     # # 卡包

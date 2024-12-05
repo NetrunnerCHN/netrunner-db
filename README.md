@@ -39,6 +39,8 @@ python -m unittest src/tests.py
 
 ## 数据结构
 
+### 卡牌属性相关
+
 * **sides / 阵营**
   * `codename`：标识符
   * `en_name`：英文名称
@@ -51,6 +53,11 @@ python -m unittest src/tests.py
   * `cn_description`：中文简介
   * `color`：颜色
   * `is_mini`：是/否迷你派系
+  * `side_codename`：所属阵营标识符
+* **types / 类型**
+  * `codename`：标识符
+  * `en_name`：英文名称
+  * `cn_name`：中文名称
   * `side_codename`：所属阵营标识符
 
 

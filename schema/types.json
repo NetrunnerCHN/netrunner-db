@@ -1,27 +1,36 @@
 {
   "name": "types",
-  "comment": "卡牌类型",
-  "en_filename": "card_types",
-  "cn_filename": "types.zh-hans",
+  "source_data": "data/EN/v2/card_types.json",
+  "translation_data": "data/CN/json/translations/zh-hans/types.zh-hans.json",
+  "source_id": "id",
+  "translation_id": "code",
+  "connection_id": "",
   "fields": [
     {
+      "name": "codename",
+      "source": "id",
+      "is_trans": false
+    },
+    {
       "name": "en_name",
-      "comment": "英文名称",
-      "lang": 1,
-      "source": "name"
+      "source": "name",
+      "is_trans": false
     },
     {
       "name": "cn_name",
-      "comment": "中文名称",
-      "lang": 2,
-      "source": "name"
+      "source": "name",
+      "is_trans": true
     },
     {
       "name": "side_codename",
-      "comment": "所属阵营",
-      "lang": 1,
-      "source": "side_id"
+      "source": "side_id",
+      "is_trans": false
     }
   ],
-  "ignores": []
+  "ignores": [
+    {
+      "name": "code",
+      "is_trans": true
+    }
+  ]
 }

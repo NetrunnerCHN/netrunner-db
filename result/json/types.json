@@ -1,0 +1,68 @@
+[
+  {
+    "codename": "agenda",
+    "en_name": "Agenda",
+    "cn_name": "议案",
+    "side_codename": "corp"
+  },
+  {
+    "codename": "asset",
+    "en_name": "Asset",
+    "cn_name": "资产",
+    "side_codename": "corp"
+  },
+  {
+    "codename": "corp_identity",
+    "en_name": "Corp Identity",
+    "cn_name": "公司特性",
+    "side_codename": "corp"
+  },
+  {
+    "codename": "event",
+    "en_name": "Event",
+    "cn_name": "事件",
+    "side_codename": "runner"
+  },
+  {
+    "codename": "hardware",
+    "en_name": "Hardware",
+    "cn_name": "硬件",
+    "side_codename": "runner"
+  },
+  {
+    "codename": "ice",
+    "en_name": "Ice",
+    "cn_name": "防火墙",
+    "side_codename": "corp"
+  },
+  {
+    "codename": "operation",
+    "en_name": "Operation",
+    "cn_name": "事务",
+    "side_codename": "corp"
+  },
+  {
+    "codename": "program",
+    "en_name": "Program",
+    "cn_name": "程序",
+    "side_codename": "runner"
+  },
+  {
+    "codename": "resource",
+    "en_name": "Resource",
+    "cn_name": "资源",
+    "side_codename": "runner"
+  },
+  {
+    "codename": "runner_identity",
+    "en_name": "Runner Identity",
+    "cn_name": "潜袭者特性",
+    "side_codename": "runner"
+  },
+  {
+    "codename": "upgrade",
+    "en_name": "Upgrade",
+    "cn_name": "升级",
+    "side_codename": "corp"
+  }
+]
