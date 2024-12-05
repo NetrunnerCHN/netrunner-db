@@ -1,21 +1,31 @@
 {
   "name": "sides",
-  "comment": "阵营",
-  "en_filename": "sides",
-  "cn_filename": "sides.zh-hans",
+  "source_data": "data/EN/v2/sides.json",
+  "translation_data": "data/CN/json/translations/zh-hans/sides.zh-hans.json",
+  "source_id": "id",
+  "translation_id": "code",
+  "connection_id": "",
   "fields": [
     {
+      "name": "codename",
+      "source": "id",
+      "is_trans": false
+    },
+    {
       "name": "en_name",
-      "comment": "英文名称",
-      "lang": 1,
-      "source": "name"
+      "source": "name",
+      "is_trans": false
     },
     {
       "name": "cn_name",
-      "comment": "中文名称",
-      "lang": 2,
-      "source": "name"
+      "source": "name",
+      "is_trans": true
     }
   ],
-  "ignores": []
+  "ignores": [
+    {
+      "name": "code",
+      "is_trans": true
+    }
+  ]
 }
