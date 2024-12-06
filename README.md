@@ -81,6 +81,16 @@ python -m unittest src/tests.py
   * `cn_name`：中文名称
   * `position`：位置
   * `released_by`：发行商
+* **sets / 卡包**
+  * `codename`：标识符
+  * `en_name`：英文名称
+  * `cn_name`：中文名称
+  * `cycle_codename`：所属循环标识符
+  * `set_type_codename`：卡包类型标识符
+  * `release_date`：发行日期
+  * `position`：位置
+  * `released_by`：发行商
+  * `size`：卡牌数量
 
 
 

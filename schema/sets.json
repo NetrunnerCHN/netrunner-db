@@ -1,59 +1,65 @@
 {
   "name": "sets",
-  "comment": "卡包",
-  "en_filename": "card_sets",
-  "cn_filename": "packs.zh-hans",
+  "source_data": "data/EN/v2/card_sets.json",
+  "translation_data": "data/CN/json/translations/zh-hans/packs.zh-hans.json",
+  "source_id": "id",
+  "translation_id": "code",
+  "connection_id": "legacy_code",
   "fields": [
     {
+      "name": "codename",
+      "source": "id",
+      "is_trans": false
+    },
+    {
       "name": "en_name",
-      "comment": "英文名称",
-      "lang": 1,
-      "source": "name"
+      "source": "name",
+      "is_trans": false
     },
     {
       "name": "cn_name",
-      "comment": "中文名称",
-      "lang": 2,
-      "source": "name"
+      "source": "name",
+      "is_trans": true
     },
     {
       "name": "cycle_codename",
-      "comment": "所属循环",
-      "lang": 1,
-      "source": "card_cycle_id"
+      "source": "card_cycle_id",
+      "is_trans": false
     },
     {
       "name": "set_type_codename",
-      "comment": "所属卡包类型",
-      "lang": 1,
-      "source": "card_set_type_id"
+      "source": "card_set_type_id",
+      "is_trans": false
     },
     {
       "name": "release_date",
-      "comment": "发行日期",
-      "lang": 1,
-      "source": "date_release"
+      "source": "date_release",
+      "is_trans": false
     },
     {
       "name": "position",
-      "comment": "位置",
-      "lang": 1,
-      "source": "position"
+      "source": "position",
+      "is_trans": false
     },
     {
       "name": "released_by",
-      "comment": "发行商",
-      "lang": 1,
-      "source": "released_by"
+      "source": "released_by",
+      "is_trans": false
     },
     {
       "name": "size",
-      "comment": "卡牌数量",
-      "lang": 1,
-      "source": "size"
+      "source": "size",
+      "is_trans": false
     }
   ],
   "ignores": [
-    "legacy_code"
+    {
+      "name": "legacy_code",
+      "is_trans": false
+    },
+    {
+      "name": "code",
+      "is_trans": true
+    }
   ]
 }

@@ -37,8 +37,8 @@ def run():
     # 卡包
     create_data("set_types")
     create_data("cycles")
-    # create_data("sets")
-    #
+    create_data("sets")
+
     # # 赛制
     # create_data("formats")
     # create_data("rotations")
