@@ -1,23 +1,39 @@
 {
   "name": "format",
   "comment": "赛制",
-  "en_filename": "formats",
-  "cn_filename": "formats.zh-hans",
+  "source_data": "data/EN/v2/formats",
+  "translation_data": "data/CN/json/translations/zh-hans/formats.zh-hans.json",
+  "source_id": "id",
+  "translation_id": "code",
+  "connection_id": "",
   "fields": [
+    {
+      "name": "codename",
+      "comment": "标识符",
+      "is_trans": false,
+      "source": "id"
+    },
     {
       "name": "en_name",
       "comment": "英文名称",
-      "lang": 1,
+      "is_trans": false,
       "source": "name"
     },
     {
       "name": "cn_name",
       "comment": "中文名称",
-      "lang": 2,
+      "is_trans": true,
       "source": "name"
     }
   ],
   "ignores": [
-    "snapshots"
+    {
+      "name": "snapshots",
+      "is_trans": false
+    },
+    {
+      "name": "code",
+      "is_trans": true
+    }
   ]
 }

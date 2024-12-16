@@ -1,0 +1,32 @@
+[
+  {
+    "codename": "eternal",
+    "en_name": "Eternal",
+    "cn_name": "永恒"
+  },
+  {
+    "codename": "ram",
+    "en_name": "Random Access Memories",
+    "cn_name": "RAM"
+  },
+  {
+    "codename": "snapshot",
+    "en_name": "Snapshot",
+    "cn_name": "快照"
+  },
+  {
+    "codename": "standard",
+    "en_name": "Standard",
+    "cn_name": "标准"
+  },
+  {
+    "codename": "startup",
+    "en_name": "Startup",
+    "cn_name": "新启"
+  },
+  {
+    "codename": "system_gateway",
+    "en_name": "System Gateway",
+    "cn_name": "核心网关"
+  }
+]

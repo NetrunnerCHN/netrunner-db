@@ -55,3 +55,17 @@ def write_dict(name: str, data: list[dict[str, str]]):
     fullname = os.path.join(RESULT_FOLDER, JSON_RESULT_FOLDER, name + JSON_EXT)
     with open(fullname, mode="w", encoding="utf-8", newline="") as f:
         f.write(text)
+
+
+def clear_result():
+    csv_route = os.path.join(RESULT_FOLDER, CSV_RESULT_FOLDER)
+    csv_files = os.listdir(csv_route)
+    for f in csv_files:
+        fullname = os.path.join(csv_route, f)
+        os.remove(fullname)
+
+    json_route = os.path.join(RESULT_FOLDER, JSON_RESULT_FOLDER)
+    json_files = os.listdir(json_route)
+    for f in json_files:
+        fullname = os.path.join(json_route, f)
+        os.remove(fullname)

@@ -1,6 +1,6 @@
 import json
 import logging
-from typing import Any, Optional
+from typing import Any
 
 from schema import Schema
 from table import Table
@@ -88,31 +88,3 @@ class Handler:
             return json.dumps(data[index], ensure_ascii=False)
         else:
             return str(data[index])
-
-
-#
-#
-# class CardHandler(Handler):
-#     def normalize(self):
-#         schema = Schema("printings")
-#         handler = Handler(schema)
-#         candidates = list()
-#         for e in self.source_table.entries:
-#             e[self.schema.connection_id] = ""
-#             for t in handler.source_table.entries:
-#                 if t["card_id"] == e[self.schema.source_id] and t[schema.source_id] > e[self.schema.connection_id]:
-#                     e[self.schema.connection_id] = t[schema.source_id]
-#
-#             if "faces" in e:
-#                 for idx, f in enumerate(e["faces"]):
-#                     copy = e.copy()
-#                     copy[self.schema.source_id] = copy[self.schema.source_id] + f"_face{idx}"
-#                     for k, v in f.items():
-#                         copy[k] = v
-#
-#                     candidates.append(copy)
-#
-#         for e in candidates:
-#             self.source_table.entries.append(e)
-#             self.source_table.mappers[e[self.schema.source_id]] = e
-#             logging.info(f"属性 {self.schema.name} 新增条目: {e[self.schema.source_id]}!")

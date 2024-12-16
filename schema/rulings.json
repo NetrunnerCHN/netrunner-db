@@ -1,43 +1,46 @@
 {
   "name": "rulings",
   "comment": "FAQ",
-  "en_filename": "rulings",
-  "cn_filename": "rulings.zh-hans",
+  "source_data": "data/EN/v2/rulings",
+  "translation_data": "",
+  "source_id": "",
+  "translation_id": "",
+  "connection_id": "",
   "fields": [
     {
       "name": "card_codename",
       "comment": "所属卡牌",
-      "lang": 1,
+      "is_trans": false,
       "source": "card_id"
     },
     {
-      "name": "updated_date",
+      "name": "update_date",
       "comment": "更新日期",
-      "lang": 1,
+      "is_trans": false,
       "source": "date_update"
     },
     {
       "name": "text_ruling",
       "comment": "规则文本",
-      "lang": 1,
+      "is_trans": false,
       "source": "text_ruling"
     },
     {
       "name": "question",
       "comment": "问题",
-      "lang": 1,
+      "is_trans": false,
       "source": "question"
     },
     {
       "name": "answer",
       "comment": "回答",
-      "lang": 1,
+      "is_trans": false,
       "source": "answer"
     },
     {
       "name": "nsg_rules_team_verified",
       "comment": "官方验证状态",
-      "lang": 1,
+      "is_trans": false,
       "source": "nsg_rules_team_verified"
     }
   ],

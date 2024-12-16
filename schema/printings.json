@@ -1,0 +1,95 @@
+{
+  "name": "printings",
+  "comment": "卡图",
+  "source_data": "data/EN/v2/printings",
+  "translation_data": "data/CN/json/translations/zh-hans/pack",
+  "source_id": "id",
+  "translation_id": "code",
+  "connection_id": "",
+  "fields": [
+    {
+      "name": "codename",
+      "comment": "标识符",
+      "is_trans": false,
+      "source": "id"
+    },
+    {
+      "name": "card_codename",
+      "comment": "所属卡牌",
+      "is_trans": false,
+      "source": "card_id"
+    },
+    {
+      "name": "set_codename",
+      "comment": "所属卡包",
+      "is_trans": false,
+      "source": "card_set_id"
+    },
+    {
+      "name": "en_flavor",
+      "comment": "英文背景描述",
+      "is_trans": false,
+      "source": "flavor"
+    },
+    {
+      "name": "cn_flavor",
+      "comment": "中文背景描述",
+      "is_trans": true,
+      "source": "flavor"
+    },
+    {
+      "name": "illustrator",
+      "comment": "画师",
+      "is_trans": false,
+      "source": "illustrator"
+    },
+    {
+      "name": "position",
+      "comment": "位置",
+      "is_trans": false,
+      "source": "position"
+    },
+    {
+      "name": "quantity",
+      "comment": "数量",
+      "is_trans": false,
+      "source": "quantity"
+    },
+    {
+      "name": "released_by",
+      "comment": "发行商",
+      "is_trans": false,
+      "source": "released_by"
+    }
+  ],
+  "ignores": [
+    {
+      "name": "layout_id",
+      "is_trans": false
+    },
+    {
+      "name": "copy_quantity",
+      "is_trans": false
+    },
+    {
+      "name": "faces",
+      "is_trans": false
+    },
+    {
+      "name": "code",
+      "is_trans": true
+    },
+    {
+      "name": "keywords",
+      "is_trans": true
+    },
+    {
+      "name": "text",
+      "is_trans": true
+    },
+    {
+      "name": "title",
+      "is_trans": true
+    }
+  ]
+}

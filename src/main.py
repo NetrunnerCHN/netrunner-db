@@ -3,12 +3,13 @@ import logging
 import toolbox
 from handler import Handler
 from schema import Schema
-from transformer import Transformer, InvariantTransformer
+from transformer import Transformer, InvariantTransformer, PrintingTransformer, CardTransformer
 
 
 def initialize():
     # logging.disable()
     logging.basicConfig(filename="record.log", filemode="w", format="%(asctime)s [%(levelname)s] %(message)s", encoding="utf-8", level=logging.NOTSET)
+    toolbox.clear_result()
 
 
 def create_data(name: str, transformer: Transformer | None = None):
@@ -39,15 +40,15 @@ def run():
     create_data("cycles")
     create_data("sets")
 
-    # # 赛制
-    # create_data("formats")
-    # create_data("rotations")
+    # 赛制
+    create_data("formats")
+    create_data("rotations")
     # create_data("restrictions")
     #
     # # 卡牌
-    # create_data("rulings")
-    # create_data("printings", PrintingHandler)
-    # create_data("cards", CardHandler)
+    create_data("rulings")
+    create_data("printings", PrintingTransformer())
+    create_data("cards", CardTransformer())
 
 
 if __name__ == '__main__':

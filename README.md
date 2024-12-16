@@ -7,6 +7,12 @@
 * [NetrunnerDB/netrunner-cards-json](https://github.com/NetrunnerDB/netrunner-cards-json)：官方英文卡牌数据库
 * [NoahTheDuke/netrunner-data](https://github.com/NoahTheDuke/netrunner-data)：卡牌中文翻译数据库
 
+## 生成数据
+
+* [result/csv](result/csv)：以 .csv 格式输出的数据
+* [result/json](result/json)：以 .json 格式输出的数据
+* 
+
 ## 使用说明
 
 * 生成数据
@@ -113,17 +119,6 @@ card_pools -> sets[]
 restrictions -> cards[]
 
 每个 format 引用一个 card_pool 和一个 restrictions
-
-### 卡包相关
-
-- cycles: 循环
-- sets: 卡包
-- set_types: 卡包类型
-
-**关联**
-
-sets -> cycles
-sets -> set_types
 
 ### 卡牌相关
 

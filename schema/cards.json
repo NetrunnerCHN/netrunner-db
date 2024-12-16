@@ -1,0 +1,211 @@
+{
+  "name": "cards",
+  "comment": "卡牌",
+  "source_data": "data/EN/v2/cards",
+  "translation_data": "data/CN/json/translations/zh-hans/pack",
+  "source_id": "id",
+  "translation_id": "code",
+  "connection_id": "legacy_code",
+  "fields": [
+    {
+      "name": "codename",
+      "comment": "标识符",
+      "is_trans": false,
+      "source": "id"
+    },
+    {
+      "name": "en_title",
+      "comment": "英文标题",
+      "is_trans": false,
+      "source": "title"
+    },
+    {
+      "name": "cn_title",
+      "comment": "英文背景描述",
+      "is_trans": true,
+      "source": "title"
+    },
+    {
+      "name": "stripped_title",
+      "comment": "简化标题",
+      "is_trans": false,
+      "source": "stripped_title"
+    },
+    {
+      "name": "en_text",
+      "comment": "英文文本",
+      "is_trans": false,
+      "source": "text"
+    },
+    {
+      "name": "cn_text",
+      "comment": "中文文本",
+      "is_trans": true,
+      "source": "text"
+    },
+    {
+      "name": "stripped_text",
+      "comment": "简化文本",
+      "is_trans": false,
+      "source": "stripped_text"
+    },
+    {
+      "name": "advancement_requirement",
+      "comment": "推进需求",
+      "is_trans": false,
+      "source": "advancement_requirement"
+    },
+    {
+      "name": "agenda_points",
+      "comment": "议案分数",
+      "is_trans": false,
+      "source": "agenda_points"
+    },
+    {
+      "name": "agenda_points",
+      "comment": "议案分数",
+      "is_trans": false,
+      "source": "agenda_points"
+    },
+    {
+      "name": "attribution",
+      "comment": "版权归属",
+      "is_trans": false,
+      "source": "attribution"
+    },
+    {
+      "name": "base_link",
+      "comment": "中转",
+      "is_trans": false,
+      "source": "base_link"
+    },
+    {
+      "name": "type_codename",
+      "comment": "类型",
+      "is_trans": false,
+      "source": "card_type_id"
+    },
+    {
+      "name": "subtype_codenames",
+      "comment": "子类型",
+      "is_trans": false,
+      "source": "subtypes"
+    },
+    {
+      "name": "cost",
+      "comment": "费用",
+      "is_trans": false,
+      "source": "cost"
+    },
+    {
+      "name": "deck_limit",
+      "comment": "牌组数量限制",
+      "is_trans": false,
+      "source": "deck_limit"
+    },
+    {
+      "name": "designed_by",
+      "comment": "设计者",
+      "is_trans": false,
+      "source": "designed_by"
+    },
+    {
+      "name": "faction_codename",
+      "comment": "派系",
+      "is_trans": false,
+      "source": "faction_id"
+    },
+    {
+      "name": "influence_cost",
+      "comment": "影响力费用",
+      "is_trans": false,
+      "source": "influence_cost"
+    },
+    {
+      "name": "influence_limit",
+      "comment": "影响力上限",
+      "is_trans": false,
+      "source": "influence_limit"
+    },
+    {
+      "name": "is_unique",
+      "comment": "是否独有",
+      "is_trans": false,
+      "source": "is_unique"
+    },
+    {
+      "name": "memory_cost",
+      "comment": "内存费用",
+      "is_trans": false,
+      "source": "memory_cost"
+    },
+    {
+      "name": "minimum_deck_size",
+      "comment": "最低牌组张数",
+      "is_trans": false,
+      "source": "minimum_deck_size"
+    },
+    {
+      "name": "pronouns",
+      "comment": "人称",
+      "is_trans": false,
+      "source": "pronouns"
+    },
+    {
+      "name": "pronunciation_approx",
+      "comment": "读音",
+      "is_trans": false,
+      "source": "pronunciation_approx"
+    },
+    {
+      "name": "pronunciation_ipa",
+      "comment": "音标读音",
+      "is_trans": false,
+      "source": "pronunciation_ipa"
+    },
+    {
+      "name": "side_codename",
+      "comment": "阵营",
+      "is_trans": false,
+      "source": "side_id"
+    },
+    {
+      "name": "strength",
+      "comment": "强度",
+      "is_trans": false,
+      "source": "strength"
+    },
+    {
+      "name": "trash_cost",
+      "comment": "销毁费用",
+      "is_trans": false,
+      "source": "trash_cost"
+    }
+  ],
+  "ignores": [
+    {
+      "name": "legacy_code",
+      "is_trans": false
+    },
+    {
+      "name": "layout_id",
+      "is_trans": false
+    },
+    {
+      "name": "faces",
+      "is_trans": false
+    },
+    {
+      "name": "keywords",
+      "is_trans": true
+    },
+    {
+      "name": "flavor",
+      "is_trans": true
+    },
+    {
+      "name": "code",
+      "is_trans": true
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "rotations",
+  "comment": "卡池",
+  "source_data": "data/EN/v2/card_pools",
+  "translation_data": "",
+  "source_id": "id",
+  "translation_id": "",
+  "connection_id": "",
+  "fields": [
+    {
+      "name": "codename",
+      "comment": "标识符",
+      "is_trans": false,
+      "source": "id"
+    },
+    {
+      "name": "en_name",
+      "comment": "英文名称",
+      "is_trans": false,
+      "source": "name"
+    },
+    {
+      "name": "format_codename",
+      "comment": "所属环境",
+      "is_trans": false,
+      "source": "format_id"
+    },
+    {
+      "name": "cycle_codenames",
+      "comment": "包含循环",
+      "is_trans": false,
+      "source": "card_cycle_ids"
+    },
+    {
+      "name": "set_codenames",
+      "comment": "包含卡包",
+      "is_trans": false,
+      "source": "card_set_ids"
+    }
+  ],
+  "ignores": []
+}
