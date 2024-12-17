@@ -1,0 +1,41 @@
+{
+  "name": "snapshots",
+  "source_data": "data/EN/v2/formats",
+  "translation_data": "",
+  "source_id": "",
+  "translation_id": "",
+  "connection_id": "",
+  "fields": [
+    {
+      "name": "codename",
+      "is_trans": false,
+      "source": "id"
+    },
+    {
+      "name": "format_codename",
+      "is_trans": false,
+      "source": "format_id"
+    },
+    {
+      "name": "active",
+      "is_trans": false,
+      "source": "active"
+    },
+    {
+      "name": "card_pool_codename",
+      "is_trans": false,
+      "source": "card_pool_id"
+    },
+    {
+      "name": "restriction_codename",
+      "is_trans": false,
+      "source": "restriction_id"
+    },
+    {
+      "name": "start_date",
+      "is_trans": false,
+      "source": "date_start"
+    }
+  ],
+  "ignores": []
+}

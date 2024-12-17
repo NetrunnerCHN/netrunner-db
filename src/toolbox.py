@@ -42,7 +42,7 @@ RESULT_FOLDER = "result"
 CSV_RESULT_FOLDER = "csv"
 JSON_RESULT_FOLDER = "json"
 
-def write_csv(name: str, header: list[str], data: list[dict[str, str]]):
+def write_csv(name: str, header: list[str], data: list[dict[str, list | str]]):
     fullname = os.path.join(RESULT_FOLDER, CSV_RESULT_FOLDER, name + CSV_EXT)
     with open(fullname, mode="w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=header, quoting=csv.QUOTE_ALL)
@@ -50,7 +50,7 @@ def write_csv(name: str, header: list[str], data: list[dict[str, str]]):
         writer.writerows(data)
 
 
-def write_dict(name: str, data: list[dict[str, str]]):
+def write_dict(name: str, data: list[dict[str, list | str]]):
     text = json.dumps(data, ensure_ascii=False, indent=2)
     fullname = os.path.join(RESULT_FOLDER, JSON_RESULT_FOLDER, name + JSON_EXT)
     with open(fullname, mode="w", encoding="utf-8", newline="") as f:

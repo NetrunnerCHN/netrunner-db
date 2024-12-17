@@ -60,3 +60,14 @@ class CardTransformer(Transformer):
             table.entries.append(e)
             table.mappers[e[schema.source_id]] = e
             logging.info(f"属性 {schema.name} 新增条目: {e[schema.source_id]}!")
+
+
+class SnapshotTransformer(Transformer):
+    def transform(self, schema: Schema, table: Table):
+        result = list()
+        for e in table.entries:
+            for s in e["snapshots"]:
+                s["format_id"] = e["id"]
+                result.append(s)
+
+        table.entries = result

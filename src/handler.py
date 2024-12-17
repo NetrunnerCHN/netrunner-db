@@ -65,26 +65,33 @@ class Handler:
 
         return result
 
-    def create_data(self) -> list[dict[str, str]]:
+    def create_data(self, flatten_list: bool) -> list[dict[str, list | str]]:
         result = list()
         for source in self.source_table.entries:
             trans = self.find_translation(source)
             line = dict()
             for f in self.schema.fields:
                 if f.is_trans:
-                    line[f.name] = self.serialize_field(trans, f.source)
+                    line[f.name] = self.serialize_field(trans, f.source, flatten_list)
                 else:
-                    line[f.name] = self.serialize_field(source, f.source)
+                    line[f.name] = self.serialize_field(source, f.source, flatten_list)
 
             result.append(line)
 
         return result
 
-    def serialize_field(self, data: dict[str, Any] | None, index: str) -> str:
+    def serialize_field(self, data: dict[str, Any] | None, index: str, flatten_list: bool) -> list | str:
         if (data is None) or (index not in data):
             return ""
 
         if isinstance(data[index], list):
-            return json.dumps(data[index], ensure_ascii=False)
+            if flatten_list:
+                return json.dumps(data[index], ensure_ascii=False)
+            else:
+                result = list()
+                for i in data[index]:
+                    result.append(str(i))
+
+                return result
         else:
             return str(data[index])

@@ -3,7 +3,7 @@ import logging
 import toolbox
 from handler import Handler
 from schema import Schema
-from transformer import Transformer, InvariantTransformer, PrintingTransformer, CardTransformer
+from transformer import Transformer, InvariantTransformer, PrintingTransformer, CardTransformer, SnapshotTransformer
 
 
 def initialize():
@@ -20,9 +20,10 @@ def create_data(name: str, transformer: Transformer | None = None):
     handler = Handler(schema, transformer)
     handler.validate()
     header = handler.create_header()
-    data = handler.create_data()
-    toolbox.write_csv(name, header, data)
-    toolbox.write_dict(name, data)
+    csv_data = handler.create_data(True)
+    dict_data = handler.create_data(False)
+    toolbox.write_csv(name, header, csv_data)
+    toolbox.write_dict(name, dict_data)
     logging.info(f"属性 {name} 的数据生成完毕!")
 
 
@@ -42,7 +43,7 @@ def run():
 
     # 赛制
     create_data("formats")
-    create_data("rotations")
+    create_data("snapshots", SnapshotTransformer())
     # create_data("restrictions")
     #
     # # 卡牌
