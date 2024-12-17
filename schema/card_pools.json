@@ -1,0 +1,36 @@
+{
+  "name": "card_pools",
+  "source_data": "data/EN/v2/card_pools",
+  "translation_data": "",
+  "source_id": "id",
+  "translation_id": "",
+  "connection_id": "",
+  "fields": [
+    {
+      "name": "codename",
+      "is_trans": false,
+      "source": "id"
+    },
+    {
+      "name": "format_codename",
+      "is_trans": false,
+      "source": "format_id"
+    },
+    {
+      "name": "en_name",
+      "is_trans": false,
+      "source": "name"
+    },
+    {
+      "name": "cycle_codename",
+      "is_trans": false,
+      "source": "card_cycle_ids"
+    },
+    {
+      "name": "set_codename",
+      "is_trans": false,
+      "source": "card_set_ids"
+    }
+  ],
+  "ignores": []
+}

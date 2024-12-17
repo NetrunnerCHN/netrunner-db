@@ -168,6 +168,12 @@ python -m unittest src/tests.py
   * `card_pool_codename`：所用卡池
   * `restriction_codename`：所用禁卡表
   * `start_date`：启用日期
+* **card_pools / 卡池**
+  * `codename`：标识符
+  * `format_codename`：所属赛制
+  * `en_name`：英文名称
+  * `cycle_codename`：所用循环
+  * `set_codename`：所用卡包
 
 
 ## 笔记

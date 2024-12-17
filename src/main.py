@@ -44,6 +44,7 @@ def run():
     # 赛制
     create_data("formats")
     create_data("snapshots", SnapshotTransformer())
+    create_data("card_pools")
     # create_data("restrictions")
     #
     # # 卡牌
