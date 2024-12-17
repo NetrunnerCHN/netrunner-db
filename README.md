@@ -174,24 +174,26 @@ python -m unittest src/tests.py
   * `en_name`：英文名称
   * `cycle_codename`：所用循环
   * `set_codename`：所用卡包
+* **restrictions / 禁限表**
+  * `codename`：标识符
+  * `en_name`：英文名称
+  * `format_codename`：所属赛制
+  * `start_date`：启用日期
+  * `banned_card`：禁用卡牌
+  * `banned_subtype`：禁用子类型
 
+## 丢弃字段
 
-## 笔记
-
-### 环境相关
-
-- formats: 赛制
-* snapshots: 环境
-- card_pools: 卡池
-* restrictions: 禁卡表
-
-snapshots -> formats
-snapshots -> card_pools
-snapshots -> restrictions
-card_pools -> formats
-restrictions -> formats
-card_pools -> cycles[]
-card_pools -> sets[]
-restrictions -> cards[]
-
-每个 format 引用一个 card_pool 和一个 restrictions
+* **printings**
+  * `layout_id`
+  * `copy_quantity`
+  * `faces`
+* **cards**
+  * `layout_id`
+  * `faces`
+* **restrictions**
+  * `global_penalty`
+  * `universal_faction_cost`
+  * `restricted`
+  * `point_limit`
+  * `points`

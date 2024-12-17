@@ -71,3 +71,15 @@ class SnapshotTransformer(Transformer):
                 result.append(s)
 
         table.entries = result
+
+
+class RestrictionTransformer(Transformer):
+    def transform(self, schema: Schema, table: Table):
+        for e in table.entries:
+            if "subtypes" in e:
+                banlist = e["subtypes"]
+                flatten = list()
+                for k in banlist:
+                    flatten.extend(banlist[k])
+
+                e["subtypes"] = flatten

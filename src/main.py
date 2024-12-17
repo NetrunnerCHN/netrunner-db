@@ -3,7 +3,7 @@ import logging
 import toolbox
 from handler import Handler
 from schema import Schema
-from transformer import Transformer, InvariantTransformer, PrintingTransformer, CardTransformer, SnapshotTransformer
+from transformer import Transformer, InvariantTransformer, PrintingTransformer, CardTransformer, SnapshotTransformer, RestrictionTransformer
 
 
 def initialize():
@@ -45,9 +45,9 @@ def run():
     create_data("formats")
     create_data("snapshots", SnapshotTransformer())
     create_data("card_pools")
-    # create_data("restrictions")
-    #
-    # # 卡牌
+    create_data("restrictions", RestrictionTransformer())
+
+    # 卡牌
     create_data("rulings")
     create_data("printings", PrintingTransformer())
     create_data("cards", CardTransformer())

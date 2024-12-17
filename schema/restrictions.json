@@ -1,6 +1,5 @@
 {
   "name": "restrictions",
-  "comment": "禁限表",
   "source_data": "data/EN/v2/restrictions",
   "translation_data": "",
   "source_id": "id",
@@ -9,33 +8,33 @@
   "fields": [
     {
       "name": "codename",
-      "comment": "标识符",
       "is_trans": false,
       "source": "id"
     },
     {
       "name": "en_name",
-      "comment": "英文名称",
       "is_trans": false,
       "source": "name"
     },
     {
       "name": "format_codename",
-      "comment": "所属环境",
       "is_trans": false,
       "source": "format_id"
     },
     {
       "name": "start_date",
-      "comment": "开始日期",
       "is_trans": false,
       "source": "date_start"
     },
     {
-      "name": "ban_list",
-      "comment": "禁止表",
+      "name": "banned_card",
       "is_trans": false,
       "source": "banned"
+    },
+    {
+      "name": "banned_subtype",
+      "is_trans": false,
+      "source": "subtypes"
     }
   ],
   "ignores": [
@@ -44,11 +43,19 @@
       "is_trans": false
     },
     {
+      "name": "universal_faction_cost",
+      "is_trans": false
+    },
+    {
       "name": "restricted",
       "is_trans": false
     },
     {
-      "name": "universal_faction_cost",
+      "name": "point_limit",
+      "is_trans": false
+    },
+    {
+      "name": "points",
       "is_trans": false
     }
   ]
