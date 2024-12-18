@@ -360,6 +360,14 @@
     "start_date": "2023-09-21"
   },
   {
+    "codename": "standard_29",
+    "format_codename": "standard",
+    "active": "",
+    "card_pool_codename": "rotation_2023",
+    "restriction_codename": "standard_ban_list_24_12",
+    "start_date": "2024-12-26"
+  },
+  {
     "codename": "startup_0",
     "format_codename": "startup",
     "active": "",
