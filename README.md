@@ -15,6 +15,7 @@
 
 * [result/csv](result/csv)：以 .csv 格式输出的数据
 * [result/json](result/json)：以 .json 格式输出的数据
+* [金山文档](https://kdocs.cn/l/chwPQguPPpnb)：可视化表格数据
 
 ## 使用说明
 
