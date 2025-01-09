@@ -81,7 +81,7 @@ class Handler:
         return result
 
     def serialize_field(self, data: dict[str, Any] | None, index: str, flatten_list: bool) -> list | str:
-        if (data is None) or (index not in data):
+        if (data is None) or (index not in data) or (data[index] is None):
             return ""
 
         if isinstance(data[index], list):
