@@ -801,5 +801,16 @@
     "position": "2",
     "released_by": "null_signal_games",
     "size": "65"
+  },
+  {
+    "codename": "elevation",
+    "en_name": "Elevation",
+    "cn_name": "",
+    "cycle_codename": "elevation",
+    "set_type_codename": "deluxe",
+    "release_date": "2025-04-24",
+    "position": "1",
+    "released_by": "null_signal_games",
+    "size": "1"
   }
 ]

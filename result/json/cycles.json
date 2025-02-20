@@ -187,5 +187,12 @@
     "cn_name": "解放",
     "position": "33",
     "released_by": "null_signal_games"
+  },
+  {
+    "codename": "elevation",
+    "en_name": "Elevation",
+    "cn_name": "",
+    "position": "34",
+    "released_by": "null_signal_games"
   }
 ]
